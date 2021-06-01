@@ -1,0 +1,16 @@
+[package]
+name = "m5stack_hello_rust"
+version = "0.1.0"
+authors = ["h0gura <hiraku.o@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+xtensa-lx-rt = { version = "0.5.0", optional = true, features = ["lx6"] }
+xtensa-lx = { version = "0.3.0", features = ["lx6"]}
+esp32 = "0.10.0"
+esp32-hal = "0.2.0"
+embedded-hal = { version = "0.2.3", features = ["unproven"] }
+embedded-graphics = "0.6.2"
+panic-halt = "0.2.0"
+
+

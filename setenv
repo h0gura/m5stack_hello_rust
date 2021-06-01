@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+# change this to the directory of where you built rustc for xtensa
+CUSTOM_RUSTC=~/Documents/rust-esp32/rust-xtensa
+
+export RUST_BACKTRACE=1 
+export XARGO_RUST_SRC=$CUSTOM_RUSTC/library # or /src for an older compiler
+export RUSTC=$CUSTOM_RUSTC/build/x86_64-apple-darwin/stage2/bin/rustc
+export RUSTDOC=$CUSTOM_RUSTC/build/x86_64-apple-darwin/stage2/bin/rustdoc
